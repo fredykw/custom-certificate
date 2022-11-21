@@ -68,7 +68,10 @@
   } 
 
 function resetName() {
-	document.getElementById("name").value = "";	
+	var getValue= document.getElementById("name");
+        	if (getValue.value !="") {
+            		getValue.value = "";
+        	}
 }
 
   function printDiv() {
